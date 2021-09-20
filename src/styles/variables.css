@@ -1,0 +1,23 @@
+:root{
+    --tds-color--black: #000;
+    --tds-color--blue10: #2e4994;
+    --tds-color--blue20: #3457b2;
+    --tds-color--blue30: #3d69e1;
+    --tds-color--green: #13bd00;
+    --tds-color--grey10: #181b21;
+    --tds-color--grey15: #212121;
+    --tds-color--grey20: #393c41;
+    --tds-color--grey25: #454545;
+    --tds-color--grey30: #5c5d61;
+    --tds-color--grey35: #8f8f8f;
+    --tds-color--grey40: #a1a3a5;
+    --tds-color--grey45: #bababa;
+    --tds-color--grey50: #d0d1d2;
+    --tds-color--grey60: #e2e4e4;
+    --tds-color--grey65: #ededed;
+    --tds-color--grey70: #f5f5f5;
+    --tds-color--red10: #b74134;
+    --tds-color--red20: #ed4d3b;
+    --tds-color--white: #fff;
+    --tds-color--yellow: #fcb11d;
+}
