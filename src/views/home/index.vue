@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <MainHeader/>
-    <CustomText class="normal">Home Page</CustomText>
+    <CustomText class="normal">Model S</CustomText>
     <DownArrow />
   </div>
 </template>

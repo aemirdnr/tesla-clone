@@ -10,7 +10,7 @@ import CustomText from '@/components/CustomText.vue'
 export default {
   name: 'Home',
   components: {
-    CustomText,
+    CustomText
   }
 }
 </script>

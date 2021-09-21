@@ -1,17 +1,42 @@
  @import 'variables.css';
+ @import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
 
- * {
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font: inherit;
- }
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
 
- html{
-    font-size: 14px;
+    color: var(--tds-color--grey10);
     box-sizing: border-box;
- }
+    scroll-behavior: smooth;
+}
 
- body{
-     font-size: 1rem;
- }
+h1, h2, h3, h4, h5, h5, li, p, small{
+    line-height: 21px;
+}
+
+ol {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+body{
+    font-family: "GothamPro";
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style-type: none;
+    margin: 0;
+    line-height: 21px;
+    max-width: 75ch;
+}
