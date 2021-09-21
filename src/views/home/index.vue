@@ -1,8 +1,6 @@
 <template>
   <div class="home">
     <MainHeader/>
-    <CustomText class="normal">Model S</CustomText>
-    <DownArrow />
   </div>
 </template>
 

@@ -1,61 +1,65 @@
 <template>
-  <header class="header">
+  <div class="tds-site-header-wrapper">
+      <header class="tds-site-header tds--fade-in">
       <!-- Column 1 -->
-      <h1 class="flex-one">
-        <router-link to="/" class="logo-a"><TeslaIcon class="logo"/></router-link>
+      <h1 class="tds-site-logo tds-align--start">
+        <router-link to="/" class="tds-site-logo-link">
+          <TeslaIcon class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"/>
+        </router-link>
       </h1>
       <!-- Column 2 -->
-      <ol class="flex-two">
+      <ol class="tds-site-nav-items tds-align--center">
       <li>
-        <router-link class="text-a" to="/models">
-          <CustomText class="text">Model S</CustomText>
+        <router-link to="/models" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+          <CustomText class="tds-site-nav-item-text">Model S</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/model3" class="text-a">
-          <CustomText class="text">Model 3</CustomText>
+        <router-link to="/model3" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+          <CustomText class="tds-site-nav-item-text">Model 3</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/modelx" class="text-a">
-          <CustomText class="text">Model X</CustomText>
+        <router-link to="/modelx" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+          <CustomText class="tds-site-nav-item-text">Model X</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/modely" class="text-a">
-          <CustomText class="text">Model Y</CustomText>
+        <router-link to="/modely" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+          <CustomText class="tds-site-nav-item-text">Model Y</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/solarroof" class="text-a">
-          <CustomText class="text">Solar Roof</CustomText>
+        <router-link to="/solarroof" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+          <CustomText class="tds-site-nav-item-text">Solar Roof</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/solarpanels" class="text-a">
-          <CustomText class="text">Solar Panels</CustomText>
+        <router-link to="/solarpanels" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+          <CustomText class="tds-site-nav-item-text">Solar Panels</CustomText>
         </router-link>
       </li> 
       </ol>
       <!-- Column 3 -->
-      <ol class="flex-three">
+      <ol class="tds-site-nav-items tds-align--end">
         <li>
-          <router-link to="/shop" class="text-a">
-            <CustomText>Shop</CustomText>
+          <router-link to="/shop" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+            <CustomText class="tds-site-nav-item-text">Shop</CustomText>
           </router-link>
         </li>
         <li>
-          <router-link to="/account" class="text-a">
-            <CustomText class="text">Account</CustomText>
+          <router-link to="/account" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+            <CustomText class="tds-site-nav-item-text">Account</CustomText>
           </router-link>
         </li>
         <li>
-          <router-link to="/menu" class="text-a">
-            <CustomText class="text">Menu</CustomText>
-          </router-link>
+          <button type="button" class="tds-site-nav-item tds-animate--backdrop">
+            <CustomText class="tds-site-nav-item-text">Menu</CustomText>
+          </button>
         </li>
       </ol>
   </header>
+  </div>
 </template>
 
 <script>
@@ -72,81 +76,99 @@ export default {
 </script>
 
 <style scoped>
-.header{
+    @font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:500;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}
+.tds-site-header{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    font-family: "Gotham SSm", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.tds--fade-in{
+    animation: 1s ease;
+}
+.tds-site-logo {
+  display: flex;
+  align-items: center;
+}
+.tds-site-nav-items {
     align-items: center;
+    display: flex;
+    margin: 0;
+    min-height: 54px;
 }
-.logo{
-  inline-size: 120px;
-  height: 30px;
+.tds-site-nav-item {
+    --tds-icon--size: 26px;
+    --tds-nav-item--color: var(--tds-color--grey10);
+    --tds-nav-item--width: auto;
+    align-items: center;
+    border-radius: 12px;
+    color: var(--tds-nav-item--color);
+    display: inline-flex;
+    inline-size: auto;
+    font-weight: 500;
+    min-block-size: 32px;
+    padding: 4px 8px;
+    transition: color .33s ease,background-color .33s ease;
 }
-.logo-a{
-  box-shadow: none;
-  display: inline-flex;
-  padding-inline-start: 16px;
-  padding: 0 8;
+.tds-site-logo-link {
+    box-shadow: none;
+    display: inline-flex;
+    padding-inline-start: 16px;
+    padding-right: 8px;
 }
-.text{
-   color: var(--tds-color--grey10);
-   margin: 0 8px;
-   transition: color .33s ease;
+.tds-align--start{
+    min-inline-size: 245px;
+    padding-left: 32px;
+    padding-inline-start: 32px;
 }
-.text-a{
+.tds-align--center{
+    flex-grow: 1;
+    justify-content: center;
+    -webkit-padding-start: 8px;
+    -webkit-inline-end: 8px;
+    -webkit-padding-end: 8px;
+    -webkit-inline-start: 8px;
+}
+.tds-align--end{
+    min-inline-size: 245px;
+    -webkit-padding-end: 32px;
+    padding-inline-end: 32px;
+}
+.tds-icon {
+    --tds-icon--cancel-margin: calc(30px/-5);
+    --tds-icon--fill: var(--tds-color--grey10,#171a20);
+    --tds-icon--stroke: var(--tds-color--grey10,#171a20);
+    background: transparent;
+    block-size: 30px;
+    content: "";
+    display: block;
+    inline-size: 30px;
+    max-width: 100%;
+    min-block-size: 30px;
+    min-inline-size: 30px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.tds-icon-logo-wordmark {
+    inline-size: calc(30px*4);
+}
+.tds-animate--backdrop{
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
+    background-color: transparent;
+}
+.tds--product-name{
   white-space: nowrap;
-  backdrop-filter: unset;
-  background-color: transparent;
-  align-items: center;
-  border-radius: 12px;
-  display: inline-flex;
+}
+.tds-site-nav-item-text{
   color: var(--tds-color--grey10);
-  font-weight: 500;
-  inline-size: auto;
-  min-block-size: 32px;
-  padding: 4 8;
-  transition: color .33s ease,background-color .33s ease;
+  margin: 0 8px;
+  transition: color .33s ease;
 }
-.flex-one{
-  display: flex;
-  box-sizing: border-box;
-  justify-content: flex-start;
-
-  align-items: center;
-  padding: 0;
-  min-height: 54px;
-  line-height: 48px;
-
-  min-inline-size: 245px;
-  padding-inline-start: 32px;
-}
-.flex-two{
-  list-style-type: none;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
-  
-  flex-grow: 1;
-  padding-inline-end: 8px;
-  padding-inline-start: 8px;
-
-  line-height: 21px;
-  min-height: 54px;
-
-  align-items: center;
-  margin: 0;
-  transition: transform .5s ease,-webkit-transform .5s ease;
-}
-.flex-three{
-  display: flex;
-  justify-content: flex-end;
-  box-sizing: border-box;
-
-  min-inline-size: 245px;
-  padding-inline-end: 32px;
-
-  line-height: 21px;
-  min-height: 54px;
-  align-items: center;
-  margin: 0;
-  transition: transform .5s ease,-webkit-transform .5s ease;
+.tds-site-header-wrapper{
+  position: absolute;
+  width: 100vw;
 }
 </style>

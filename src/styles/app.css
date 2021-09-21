@@ -1,5 +1,4 @@
  @import 'variables.css';
- @import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
 
 * {
     margin: 0;
@@ -24,7 +23,7 @@ ol {
 }
 
 body{
-    font-family: "GothamPro";
+    font-size: 14px;
 }
 
 a {
@@ -40,3 +39,23 @@ li {
     line-height: 21px;
     max-width: 75ch;
 }
+
+/* Gotham Fonts */
+@font-face{font-display:swap;font-family:Gotham Bold;font-style:normal;font-weight:700;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Bold_Web.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:Gotham Medium;font-style:normal;font-weight:500;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:Gotham Book;font-style:normal;font-weight:400;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:Gotham Light;font-style:normal;font-weight:300;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Light_Web.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:Gotham Extra Light;font-style:normal;font-weight:200;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-XLight_Web.woff2) format("woff2")}
+/* Gotham SSm Fonts */
+@font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:700;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Bold_Web.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:500;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:400;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:300;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Light_Web.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:200;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-XLight_Web.woff2) format("woff2")}
+/* PingFang Fonts */
+@font-face{font-family:PingFang SC;font-weight:500;src:local("PingFang SC Semibold")}
+@font-face{font-family:PingFang TC;font-weight:500;src:local("PingFang TC Semibold")}
+@font-face{font-family:PingFang HK;font-weight:500;src:local("PingFang HK Semibold")}
+@font-face{font-family:PingFang SC;font-weight:400;src:local("PingFang SC Regular")}
+@font-face{font-family:PingFang TC;font-weight:400;src:local("PingFang TC Regular")}
+@font-face{font-family:PingFang HK;font-weight:400;src:local("PingFang HK Regular")}
