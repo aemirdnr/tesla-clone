@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
 
     color: var(--tds-color--grey10);
     box-sizing: border-box;
@@ -24,6 +23,7 @@ ol {
 
 body{
     font-size: 14px;
+    line-height: 21px;
 }
 
 a {
@@ -38,6 +38,11 @@ li {
     margin: 0;
     line-height: 21px;
     max-width: 75ch;
+}
+
+strong {
+    color: var(--tds-color--grey10);
+    font-weight: 500;
 }
 
 /* Gotham Fonts */

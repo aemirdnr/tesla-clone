@@ -2,13 +2,11 @@
   <div class="tds-site-header-wrapper">
       <header class="tds-site-header tds--fade-in">
       <div class="tds-animate--backdrop-backdrop"></div>
-      <!-- Column 1 -->
       <h1 class="tds-site-logo tds-align--start">
         <router-link to="/" class="tds-site-logo-link">
           <TeslaIcon class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"/>
         </router-link>
       </h1>
-      <!-- Column 2 -->
       <ol class="tds-site-nav-items tds-align--center">
       <li>
         <router-link to="/models" class="tds-site-nav-item tds--product-name tds-button--hover">
@@ -41,7 +39,6 @@
         </router-link>
       </li>
       </ol>
-      <!-- Column 3 -->
       <ol class="tds-site-nav-items tds-align--end">
         <li>
           <router-link to="/shop" class="tds-site-nav-item tds--product-name tds-button--hover">
@@ -77,8 +74,7 @@ export default {
 </script>
 
 <style scoped>
-    @font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:500;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}
-.tds-site-header{
+.tds-site-header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -86,7 +82,7 @@ export default {
     z-index: 10;
     font-family: "Gotham SSm", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
-.tds--fade-in{
+.tds--fade-in {
     animation: 1s ease;
 }
 .tds-site-logo {
@@ -99,32 +95,18 @@ export default {
     margin: 0;
     min-height: 54px;
 }
-.tds-site-nav-item {
-    --tds-icon--size: 26px;
-    --tds-nav-item--color: var(--tds-color--grey10);
-    --tds-nav-item--width: auto;
-    align-items: center;
-    border-radius: 12px;
-    color: var(--tds-nav-item--color);
-    display: inline-flex;
-    inline-size: auto;
-    font-weight: 500;
-    min-block-size: 32px;
-    padding: 4px 8px;
-    transition: color .33s ease,background-color .33s ease;
-}
 .tds-site-logo-link {
     box-shadow: none;
     display: inline-flex;
     padding-inline-start: 16px;
     padding-right: 8px;
 }
-.tds-align--start{
+.tds-align--start {
     min-inline-size: 245px;
     padding-left: 32px;
     padding-inline-start: 32px;
 }
-.tds-align--center{
+.tds-align--center {
     flex-grow: 1;
     justify-content: center;
     -webkit-padding-start: 8px;
@@ -132,7 +114,7 @@ export default {
     -webkit-padding-end: 8px;
     -webkit-inline-start: 8px;
 }
-.tds-align--end{
+.tds-align--end {
     min-inline-size: 245px;
     -webkit-padding-end: 32px;
     padding-inline-end: 32px;
@@ -155,11 +137,7 @@ export default {
 .tds-icon-logo-wordmark {
     inline-size: calc(30px*4);
 }
-.tds-animate--backdrop{
-    backdrop-filter: unset;
-    background-color: transparent;
-}
-.tds-button--hover:hover{
+.tds-button--hover:hover {
     backdrop-filter: blur(16px);
     background-color: hsla(0,0%,0%,.06);
     border-radius: 12px;
@@ -167,20 +145,32 @@ export default {
     opacity 0.5s ease,
     visibility 0s 0.5s;
 }
-.tds--product-name{
+.tds--product-name {
   white-space: nowrap;
 }
-.tds-site-nav-item-text{
-  color: var(--tds-color--grey10);
-  margin: 0 8px;
-  transition: color .33s ease;
-}
-.tds-site-header-wrapper{
+.tds-site-header-wrapper {
   position: absolute;
   width: 100vw;
 }
-button{
-    background-color: transparent;
-    cursor: pointer;
+button {
+  font-family: "Gotham SSm", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+}
+.tds-site-nav-item {
+  align-items: center;
+  border-radius: 12px;
+  color: var(--tds-color--grey10);
+  display: inline-flex;
+  inline-size: auto;
+  font-weight: 500;
+  min-block-size: 32px;
+  padding: 4px 8px;
+  transition: color .33s ease,background-color .33s ease;
+}
+.tds-site-nav-item-text{
+    color: var(--tds-color--grey10);
+    margin: 0 8px;
+    transition: color .33s ease;
 }
 </style>
