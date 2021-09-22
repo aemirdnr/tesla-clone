@@ -1,6 +1,7 @@
 <template>
   <div class="tds-site-header-wrapper">
       <header class="tds-site-header tds--fade-in">
+      <div class="tds-animate--backdrop-backdrop"></div>
       <!-- Column 1 -->
       <h1 class="tds-site-logo tds-align--start">
         <router-link to="/" class="tds-site-logo-link">
@@ -10,50 +11,50 @@
       <!-- Column 2 -->
       <ol class="tds-site-nav-items tds-align--center">
       <li>
-        <router-link to="/models" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+        <router-link to="/models" class="tds-site-nav-item tds--product-name tds-button--hover">
           <CustomText class="tds-site-nav-item-text">Model S</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/model3" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+        <router-link to="/model3" class="tds-site-nav-item tds--product-name tds-button--hover">
           <CustomText class="tds-site-nav-item-text">Model 3</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/modelx" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+        <router-link to="/modelx" class="tds-site-nav-item tds--product-name tds-button--hover">
           <CustomText class="tds-site-nav-item-text">Model X</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/modely" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+        <router-link to="/modely" class="tds-site-nav-item tds--product-name tds-button--hover">
           <CustomText class="tds-site-nav-item-text">Model Y</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/solarroof" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+        <router-link to="/solarroof" class="tds-site-nav-item tds--product-name tds-button--hover">
           <CustomText class="tds-site-nav-item-text">Solar Roof</CustomText>
         </router-link>
       </li>
       <li>
-        <router-link to="/solarpanels" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+        <router-link to="/solarpanels" class="tds-site-nav-item tds--product-name tds-button--hover">
           <CustomText class="tds-site-nav-item-text">Solar Panels</CustomText>
         </router-link>
-      </li> 
+      </li>
       </ol>
       <!-- Column 3 -->
       <ol class="tds-site-nav-items tds-align--end">
         <li>
-          <router-link to="/shop" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+          <router-link to="/shop" class="tds-site-nav-item tds--product-name tds-button--hover">
             <CustomText class="tds-site-nav-item-text">Shop</CustomText>
           </router-link>
         </li>
         <li>
-          <router-link to="/account" class="tds-site-nav-item tds-animate--backdrop tds--product-name">
+          <router-link to="/account" class="tds-site-nav-item tds--product-name tds-button--hover">
             <CustomText class="tds-site-nav-item-text">Account</CustomText>
           </router-link>
         </li>
         <li>
-          <button type="button" class="tds-site-nav-item tds-animate--backdrop">
+          <button type="button" class="tds-site-nav-item tds-button--hover">
             <CustomText class="tds-site-nav-item-text">Menu</CustomText>
           </button>
         </li>
@@ -67,11 +68,11 @@ import TeslaIcon from '@/icons/tesla-icon.svg'
 import CustomText from './CustomText.vue'
 
 export default {
-    name: "MainHeader",
-    components: {
-        TeslaIcon,
-        CustomText
-    }
+  name: 'MainHeader',
+  components: {
+    TeslaIcon,
+    CustomText
+  }
 }
 </script>
 
@@ -155,9 +156,16 @@ export default {
     inline-size: calc(30px*4);
 }
 .tds-animate--backdrop{
-    -webkit-backdrop-filter: unset;
     backdrop-filter: unset;
     background-color: transparent;
+}
+.tds-button--hover:hover{
+    backdrop-filter: blur(16px);
+    background-color: hsla(0,0%,0%,.06);
+    border-radius: 12px;
+    transition:
+    opacity 0.5s ease,
+    visibility 0s 0.5s;
 }
 .tds--product-name{
   white-space: nowrap;
@@ -170,5 +178,9 @@ export default {
 .tds-site-header-wrapper{
   position: absolute;
   width: 100vw;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
 }
 </style>
