@@ -51,24 +51,27 @@
           </router-link>
         </li>
         <li>
-          <button type="button" class="tds-site-nav-item tds-button--hover">
+          <button type="button" class="tds-site-nav-item tds-button--hover" @click="$store.state.isHidden = true">
             <CustomText class="tds-site-nav-item-text">Menu</CustomText>
           </button>
         </li>
       </ol>
   </header>
+  <DialogBox></DialogBox>
   </div>
 </template>
 
 <script>
 import TeslaIcon from '@/icons/tesla-icon.svg'
 import CustomText from './CustomText.vue'
+import DialogBox from './DialogBox.vue'
 
 export default {
   name: 'MainHeader',
   components: {
     TeslaIcon,
-    CustomText
+    CustomText,
+    DialogBox
   }
 }
 </script>
@@ -79,7 +82,6 @@ export default {
     flex-flow: row wrap;
     justify-content: space-between;
     position: relative;
-    z-index: 10;
     font-family: "Gotham SSm", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 .tds--fade-in {
@@ -88,6 +90,7 @@ export default {
 .tds-site-logo {
   display: flex;
   align-items: center;
+  font-size: 40px;
 }
 .tds-site-nav-items {
     align-items: center;
@@ -102,9 +105,9 @@ export default {
     padding-right: 8px;
 }
 .tds-align--start {
-    min-inline-size: 245px;
-    padding-left: 32px;
-    padding-inline-start: 32px;
+  min-inline-size: 245px;
+  padding-left: 32px;
+  padding-inline-start: 32px;
 }
 .tds-align--center {
     flex-grow: 1;
@@ -172,5 +175,30 @@ button {
     color: var(--tds-color--grey10);
     margin: 0 8px;
     transition: color .33s ease;
+}
+/* 1200px */
+@media (max-width: 1200px) {
+.tds-site-logo {
+  font-weight: 500;
+}
+.tds-align--start {
+  position: absolute;
+  padding-inline-start: 16px;
+  min-inline-size: 0px;
+  min-height: 54px;
+}
+.tds-align--center {
+  display: none;
+}
+.tds-align--end {
+  min-inline-size: 0px;
+}
+.tds--product-name {
+  display: none;
+}
+button {
+  backdrop-filter: blur(16px);
+  background-color: hsla(0,0%,0%,.05);
+}
 }
 </style>

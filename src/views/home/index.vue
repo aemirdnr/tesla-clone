@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import Main from '@/components/Main.vue'
 import MainHeader from '@/components/Header.vue'
 import DialogBox from '@/components/DialogBox.vue'
 import CustomText from '@/components/CustomText.vue'
@@ -17,7 +18,8 @@ export default {
     CustomText,
     DownArrow,
     MainHeader,
-    DialogBox
+    DialogBox,
+    Main
   }
 }
 </script>

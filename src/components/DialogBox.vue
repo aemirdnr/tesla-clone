@@ -1,15 +1,34 @@
 <template>
-    <div class="dialog-box">
-        <dialog aria-hidden="true" class="tds-modal tds-modal--sheet-right tds-site-header-modal">
+    <transition name="fade">
+        <div class="dialog-box"  v-show="$store.state.isHidden">
+        <dialog class="tds-modal tds-modal--sheet-right tds-site-header-modal">
             <div class="tds-modal-actions">
                 <div class="modal-space"></div>
-                    <button aria-label="Close Modal" class="tds-modal-close" type="button">
+                    <button aria-label="Close Modal" class="tds-modal-close" type="button" @click="$store.state.isHidden = false">
                         <CloseModal class="tds-icon"/>
                     </button>
                 </div>
             <ol class="tds-site-nav-items tds-site-nav-items--vertical">
                 <li></li>
                 <li>
+                    <router-link to="/" class="tds-site-nav-item tds-mini-modal">
+                        <CustomText class="tds-site-nav-item-text">Model S</CustomText>
+                    </router-link>
+                    <router-link to="/" class="tds-site-nav-item tds-mini-modal">
+                        <CustomText class="tds-site-nav-item-text">Model 3</CustomText>
+                    </router-link>
+                    <router-link to="/" class="tds-site-nav-item tds-mini-modal">
+                        <CustomText class="tds-site-nav-item-text">Model X</CustomText>
+                    </router-link>
+                    <router-link to="/" class="tds-site-nav-item tds-mini-modal">
+                        <CustomText class="tds-site-nav-item-text">Model Y</CustomText>
+                    </router-link>
+                    <router-link to="/" class="tds-site-nav-item tds-mini-modal">
+                        <CustomText class="tds-site-nav-item-text">Solar Roof</CustomText>
+                    </router-link>
+                    <router-link to="/" class="tds-site-nav-item tds-mini-modal">
+                        <CustomText class="tds-site-nav-item-text">Solar Panels</CustomText>
+                    </router-link>
                     <router-link to="/" class="tds-site-nav-item">
                         <CustomText class="tds-site-nav-item-text">Existing Inventory</CustomText>
                     </router-link>
@@ -71,8 +90,9 @@
                 </li>
             </ol>
         </dialog>
-        <div class="tds-modal-backdrop"></div>
-    </div>
+        <div class="tds-modal-backdrop" v-show="$store.state.isHidden" v-on:click="$store.state.isHidden = false"></div>
+        </div>
+    </transition>
 </template>
 
 <script>
@@ -88,6 +108,7 @@ export default {
     SelectLang
   }
 }
+
 </script>
 
 <style scoped>
@@ -113,9 +134,9 @@ export default {
     max-block-size: 100vh;
     -webkit-transform: translateX(0) translateY(50%);
     pointer-events: inherit;
-    visibility: inherit;
     transition: opacity .5s cubic-bezier(0.5,0,0,0.75), transform .5s cubic-bezier(0.5,0,0,0.75), visibility 0s 0s, -webkit-transform .5s cubic-bezier(0.5,0,0,0.75);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.16);
+    z-index: 2999;
 }
 .tds-modal--sheet-right {
     left: auto;
@@ -282,5 +303,19 @@ export default {
     background-color: rgba(0,0,0,0.3);
     z-index: 999;
     transition: background-color .5s ease,backdrop-filter .5s ease,-webkit-backdrop-filter .5s ease;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.tds-mini-modal {
+    display: none;
+}
+@media (max-width: 1200px) {
+    .tds-mini-modal {
+        display: flex;
+    }
 }
 </style>
