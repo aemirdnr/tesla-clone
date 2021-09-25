@@ -81,7 +81,6 @@ export default {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    position: relative;
     font-family: "Gotham SSm", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 .tds--fade-in {
@@ -95,7 +94,7 @@ export default {
 .tds-site-nav-items {
     align-items: center;
     display: flex;
-    margin: 0;
+    margin: 0;;
     min-height: 54px;
 }
 .tds-site-logo-link {
@@ -152,8 +151,8 @@ export default {
   white-space: nowrap;
 }
 .tds-site-header-wrapper {
-  position: absolute;
-  width: 100vw;
+  position: fixed;
+  width: 100%;
 }
 button {
   font-family: "Gotham SSm", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -191,7 +190,8 @@ button {
   display: none;
 }
 .tds-align--end {
-  min-inline-size: 0px;
+    min-inline-size: 0px;
+
 }
 .tds--product-name {
   display: none;

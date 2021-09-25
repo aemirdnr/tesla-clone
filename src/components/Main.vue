@@ -6,12 +6,12 @@
             <div class="block-content">
                 <h1 class="headline">Model S</h1>
                 <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
-                <div class="block-center"></div>      
+                <div class="block-center"></div>
                 <div class="button-menu">
-                    <a class="primary-button">
+                    <a class="primary-button" href="/">
                         <span style="color: #fff">Custom Order</span>
                     </a>
-                    <a class="primary-button tertiary-button">
+                    <a class="primary-button tertiary-button" href="/">
                         <span>Existing Inventory</span>
                     </a>
                 </div>
@@ -32,25 +32,158 @@
                 </picture>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <!-- Model Y -->
+        <section class="main-section">
+            <div class="block-content">
+                <h1 class="headline">Model Y</h1>
+                <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
+                <div class="block-center"></div>
+                <div class="button-menu">
+                    <a class="primary-button" href="/">
+                        <span style="color: #fff">Custom Order</span>
+                    </a>
+                    <a class="primary-button tertiary-button" href="/">
+                        <span>Existing Inventory</span>
+                    </a>
+                </div>
+            </div>
+            <div class="block-background">
+                <picture class="main-picture" data-iesrc="https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/3304be3b-dd0a-4128-9c26-eb61c0b98d61/bvlatuR/std/800x2100/Mobile-ModelY" media="(max-width: 599px)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/3304be3b-dd0a-4128-9c26-eb61c0b98d61/bvlatuR/std/800x2100/Mobile-ModelY%22" media="(min-width: 600px) and (orientation:portrait)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70" media="(min-width: 600px)">
+                    <img class="picture-set" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70">
+                </picture>
+            </div>
+        </section>
+        <!-- Model 3 -->
+        <section class="main-section">
+            <div class="block-content">
+                <h1 class="headline">Model 3</h1>
+                <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
+                <div class="block-center"></div>
+                <div class="button-menu">
+                    <a class="primary-button" href="/">
+                        <span style="color: #fff">Custom Order</span>
+                    </a>
+                    <a class="primary-button tertiary-button" href="/">
+                        <span>Existing Inventory</span>
+                    </a>
+                </div>
+            </div>
+            <div class="block-background">
+                <picture class="main-picture" data-iesrc="https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/fdedb888-973c-45ec-965c-0958d39d08b4/bvlatuR/std/600x1576/M3-Homepage-M" media="(max-width: 599px)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/fdedb888-973c-45ec-965c-0958d39d08b4/bvlatuR/std/600x1576/M3-Homepage-M" media="(min-width: 600px) and (orientation:portrait)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D" media="(min-width: 600px)">
+                    <img class="picture-set" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D">
+                </picture>
+            </div>
+        </section>
+        <!-- Model X -->
+        <section class="main-section">
+            <div class="block-content">
+                <h1 class="headline">Model X</h1>
+                <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
+                <div class="block-center"></div>
+                <div class="button-menu">
+                    <a class="primary-button" href="/">
+                        <span style="color: #fff">Custom Order</span>
+                    </a>
+                    <a class="primary-button tertiary-button" href="/">
+                        <span>Existing Inventory</span>
+                    </a>
+                </div>
+            </div>
+            <div class="block-background">
+                <picture class="main-picture" data-iesrc="https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/deedff20-4856-4e1f-8828-af2c08de154a/bvlatuR/std/600x1576/ModelX-Homepage-M" media="(max-width: 599px)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/deedff20-4856-4e1f-8828-af2c08de154a/bvlatuR/std/600x1576/ModelX-Homepage-M" media="(min-width: 600px) and (orientation:portrait)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D" media="(min-width: 600px)">
+                    <img class="picture-set" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D">
+                </picture>
+            </div>
+        </section>
+        <!-- Solar Panels -->
+        <section class="main-section">
+            <div class="block-content">
+                <h1 class="headline">Solar Panels</h1>
+                <h2 class="subline">Lowest Cost Solar Panels in America</h2>
+                <div class="block-center"></div>
+                <div class="button-menu">
+                    <a class="primary-button" href="/">
+                        <span style="color: #fff">Order Now</span>
+                    </a>
+                    <a class="primary-button tertiary-button" href="/">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="block-background">
+                <picture class="main-picture" data-iesrc="https://tesla-cdn.thron.com/delivery/public/image/tesla/16b04537-a4be-4bf9-8637-86862a858da8/bvlatuR/std/2880x1800/_25-HP-SolarPanels-D">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/066f19b7-d68e-45e2-8575-ad0a6f8375a8/bvlatuR/std/600x1576/_25-HP-SolarPanels-M" media="(max-width: 599px)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/066f19b7-d68e-45e2-8575-ad0a6f8375a8/bvlatuR/std/600x1576/_25-HP-SolarPanels-M" media="(min-width: 600px) and (orientation:portrait)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/16b04537-a4be-4bf9-8637-86862a858da8/bvlatuR/std/2880x1800/_25-HP-SolarPanels-D" media="(min-width: 600px)">
+                    <img class="picture-set" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/16b04537-a4be-4bf9-8637-86862a858da8/bvlatuR/std/2880x1800/_25-HP-SolarPanels-D" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/16b04537-a4be-4bf9-8637-86862a858da8/bvlatuR/std/2880x1800/_25-HP-SolarPanels-D">
+                </picture>
+            </div>
+        </section>
+        <!-- Solar Roof -->
+        <section class="main-section">
+            <div class="block-content">
+                <h1 class="headline">Solar Roof</h1>
+                <h2 class="subline">Produce Clean Energy From Your Roof</h2>
+                <div class="block-center"></div>
+                <div class="button-menu">
+                    <a class="primary-button" href="/">
+                        <span style="color: #fff">Order Now</span>
+                    </a>
+                    <a class="primary-button tertiary-button" href="/">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="block-background">
+                <picture class="main-picture" data-iesrc="https://tesla-cdn.thron.com/delivery/public/image/tesla/27ae57a3-3a1d-480c-b557-cd9caf51b96e/bvlatuR/std/2880x1620/solar-roof-hero-desktop?quality=70">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/f68100af-aabb-42b8-8186-67907284b7dd/bvlatuR/std/800x1700/solar-roof-hero-mobile" media="(max-width: 599px)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/f68100af-aabb-42b8-8186-67907284b7dd/bvlatuR/std/800x1700/solar-roof-hero-mobile" media="(min-width: 600px) and (orientation:portrait)">
+                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/27ae57a3-3a1d-480c-b557-cd9caf51b96e/bvlatuR/std/2880x1620/solar-roof-hero-desktop?quality=70" media="(min-width: 600px)">
+                    <img class="picture-set" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/27ae57a3-3a1d-480c-b557-cd9caf51b96e/bvlatuR/std/2880x1620/solar-roof-hero-desktop?quality=70" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/27ae57a3-3a1d-480c-b557-cd9caf51b96e/bvlatuR/std/2880x1620/solar-roof-hero-desktop?quality=70">
+                </picture>
+            </div>
+        </section>
+        <!-- Accesories -->
+        <section class="main-section">
+            <div class="block-content" style="left: 51%;">
+                <h1 class="headline">Accesories</h1>
+                <h2 class="subline"></h2>
+                <div class="block-center"></div>
+                <div class="button-menu">
+                    <a class="primary-button" href="/">
+                        <span style="color: #fff">Shop Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="block-background">
+                <picture class="main-picture" data-iesrc="//tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories">
+                    <source srcset="//tesla-cdn.thron.com/delivery/public/image/tesla/69095129-86c5-4f6c-a77a-740ceac04e82/bvlatuR/std/800x2100/Mobile-Accessories" media="(max-width: 599px)">
+                    <source srcset="//tesla-cdn.thron.com/delivery/public/image/tesla/69095129-86c5-4f6c-a77a-740ceac04e82/bvlatuR/std/800x2100/Mobile-Accessories" media="(min-width: 600px) and (orientation:portrait)">
+                    <source srcset="//tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories" media="(min-width: 600px)">
+                    <img class="picture-set" src="//tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories" srcset="//tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories">
+                </picture>
+            </div>
+        </section>
       </main>
   </div>
 </template>
 
 <script>
-import CustomText from '@/components/CustomText.vue'
 import DownArrow from '@/icons/down-arrow.svg'
 
 export default {
   name: 'Main',
   components: {
-      DownArrow,
-      CustomText
+    DownArrow
   }
 }
 </script>
@@ -62,6 +195,7 @@ export default {
     min-block-size: 100vh;
 }
 .main-section {
+    position: relative;
     display: flex;
 }
 .block-background {
@@ -75,7 +209,7 @@ export default {
 }
 .picture-set {
     display: block;
-    position: static;
+    position: relative;
     height: 100vh;
     width: 100%;
     object-fit: cover;
@@ -180,7 +314,6 @@ export default {
 
     text-align: center;
     justify-content: center;
-    
     -webkit-box-pack: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -243,4 +376,5 @@ export default {
     animation-iteration-count: infinite;
     animation-duration: 2s;
 }
+
 </style>
