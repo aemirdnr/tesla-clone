@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <MainHeader/>
+    <MainHeader style="z-index: 10;"/>
     <DialogBox/>
+    <Main style="z-index: -99;"/>
   </div>
 </template>
 
