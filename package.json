@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+	"postinstall": "npm run build",
+	"start": "node server.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -31,5 +33,5 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.14"
-  }
+  },
 }
