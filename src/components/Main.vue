@@ -1,12 +1,13 @@
 <template>
   <div class="main">
       <main role="main" class="main-shell">
-        <!-- Model S -->
-        <section class="main-section">
-            <div class="block-content">
-                <h1 class="headline">Model S</h1>
-                <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
-                <div class="block-center"></div>
+        <div class="main-snapping">
+            <!-- Model S -->
+            <section class="main-section child-snapping">
+                <div class="block-content">
+                    <h1 class="headline">Model S</h1>
+                    <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
+                    <div class="block-center"></div>
                 <div class="button-menu">
                     <a class="primary-button" href="/">
                         <span style="color: #fff">Custom Order</span>
@@ -22,18 +23,18 @@
                         </span>
                     </li>
                 </ul>
-            </div>
-            <div class="block-background">
-                <picture class="main-picture" data-iesrc="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop">
-                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba3606ef-ce2d-41e4-90aa-bb13d767bb1a/bvlatuR/std/1000x1576/ms-homepage-mobile" media="(max-width: 599px)">
-                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba3606ef-ce2d-41e4-90aa-bb13d767bb1a/bvlatuR/std/1000x1576/ms-homepage-mobile" media="(min-width: 600px) and (orientation:portrait)">
-                    <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop" media="(min-width: 600px)">
-                    <img class="picture-set" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop">
-                </picture>
-            </div>
-        </section>
+                </div>
+                <div class="block-background">
+                    <picture class="main-picture" data-iesrc="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop">
+                        <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba3606ef-ce2d-41e4-90aa-bb13d767bb1a/bvlatuR/std/1000x1576/ms-homepage-mobile" media="(max-width: 599px)">
+                        <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba3606ef-ce2d-41e4-90aa-bb13d767bb1a/bvlatuR/std/1000x1576/ms-homepage-mobile" media="(min-width: 600px) and (orientation:portrait)">
+                        <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop" media="(min-width: 600px)">
+                        <img class="picture-set" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop">
+                    </picture>
+                </div>
+            </section>
         <!-- Model Y -->
-        <section class="main-section">
+        <section class="main-section child-snapping">
             <div class="block-content">
                 <h1 class="headline">Model Y</h1>
                 <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
@@ -57,7 +58,7 @@
             </div>
         </section>
         <!-- Model 3 -->
-        <section class="main-section">
+        <section class="main-section child-snapping">
             <div class="block-content">
                 <h1 class="headline">Model 3</h1>
                 <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
@@ -81,7 +82,7 @@
             </div>
         </section>
         <!-- Model X -->
-        <section class="main-section">
+        <section class="main-section child-snapping">
             <div class="block-content">
                 <h1 class="headline">Model X</h1>
                 <h2 class="subline">Order Online for <a href="/">Touchless Delivery</a></h2>
@@ -105,7 +106,7 @@
             </div>
         </section>
         <!-- Solar Panels -->
-        <section class="main-section">
+        <section class="main-section child-snapping">
             <div class="block-content">
                 <h1 class="headline">Solar Panels</h1>
                 <h2 class="subline">Lowest Cost Solar Panels in America</h2>
@@ -129,7 +130,7 @@
             </div>
         </section>
         <!-- Solar Roof -->
-        <section class="main-section">
+        <section class="main-section child-snapping">
             <div class="block-content">
                 <h1 class="headline">Solar Roof</h1>
                 <h2 class="subline">Produce Clean Energy From Your Roof</h2>
@@ -152,10 +153,10 @@
                 </picture>
             </div>
         </section>
-        <!-- Accesories -->
-        <section class="main-section">
+        <!-- Accessories -->
+        <section class="main-section child-snapping">
             <div class="block-content access-section">
-                <h1 class="headline">Accesories</h1>
+                <h1 class="headline">Accessories</h1>
                 <h2 class="subline"></h2>
                 <div class="block-center"></div>
                 <div class="button-menu">
@@ -173,6 +174,7 @@
                 </picture>
             </div>
         </section>
+          </div>
       </main>
   </div>
 </template>
@@ -378,6 +380,9 @@ export default {
     animation-name: tds-keyframe--bounce;
     animation-iteration-count: infinite;
     animation-duration: 2s;
+}
+.child-snapping {
+    scroll-snap-align: start;
 }
 @media (max-width: 1200px) {
 .block-content{

@@ -53,6 +53,11 @@ strong {
     font-weight: 500;
 }
 
+html {
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+}
+
 /* Gotham Fonts */
 @font-face{font-display:swap;font-family:Gotham Bold;font-style:normal;font-weight:700;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Bold_Web.woff2) format("woff2")}
 @font-face{font-display:swap;font-family:Gotham Medium;font-style:normal;font-weight:500;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}
