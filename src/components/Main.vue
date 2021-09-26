@@ -154,7 +154,7 @@
         </section>
         <!-- Accesories -->
         <section class="main-section">
-            <div class="block-content" style="left: 51%;">
+            <div class="block-content access-section">
                 <h1 class="headline">Accesories</h1>
                 <h2 class="subline"></h2>
                 <div class="block-center"></div>
@@ -267,7 +267,7 @@ export default {
     display: grid;
     gap: 16px 24px;
     min-width: calc(min(100vw,1140px)/12*2 - 96px);
-    grid-template-columns: repeat(auto-fit,minmax(0,1fr));;
+    grid-template-columns: repeat(auto-fit,minmax(0,1fr));
     grid-template-rows: repeat(auto-fit,minmax(0,1fr));
     max-width: 100vw;
     margin-top: 16px;
@@ -360,6 +360,9 @@ export default {
         transform:translateY(3px)
     }
 }
+.access-section {
+    left: 51%;
+}
 .icon-animation {
     -webkit-box-pack: center;
     -webkit-box-align: center;
@@ -376,5 +379,18 @@ export default {
     animation-iteration-count: infinite;
     animation-duration: 2s;
 }
-
+@media (max-width: 1200px) {
+.block-content{
+    left: 55%
+}
+.button-menu{
+    grid-template-columns: 0;
+}
+.block-center {
+    margin-top: calc(48vh + 20px);
+}
+.access-section {
+    left: 58%;
+}
+}
 </style>
